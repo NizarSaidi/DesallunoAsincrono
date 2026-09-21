@@ -39,7 +39,7 @@ Console.WriteLine("=====================================================");
 // Capturamos la excepcion de cancelacion en caso de que se tarde demasiado en preparar el desayuno
 try
 {
-    await FuncionesAsincronas.HacerDesallunoAsinc(ctsAsin.Token);
+    await FuncionesAsincronas.HacerDesallunoAsinc(ctsAsin);
 }
 catch (OperationCanceledException e)
 {
